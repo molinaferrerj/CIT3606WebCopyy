@@ -6,9 +6,22 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-      
-      
-
-        
+      <script>
+        var today = new Date();
+        time = today.getHours();
+        if (time < "12") {
+            alert("Good morning!");
+        } else if (time >= "12" || time < "18") {
+            alert("Good afternoon!");
+        } else {
+            alert("Good evening!");
+        }
+        var amount = prompt("Enter your amount in USD:");
+        var currency = prompt("Enter your target currency (EUR):");
+        if (currency === "EUR") {
+            var converted = amount * 0.83;
+            alert(amount + " USD is " + converted + " EUR");
+        }
+      </script>
     </body>
 </html>
