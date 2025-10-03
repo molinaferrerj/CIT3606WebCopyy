@@ -6,10 +6,45 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <h1 id="myH1"> Bitos Page</h1>
       
-      
+        
      <!-- The JavaScript code is attached at the bottom of the page
            after the page is completely loaded. Write your code in script.js. -->
-     <script src="script.js"></script> 
+     <script>
+     </script> 
+        <img src ="V1.jpg" alt="Valencia 1" width="580" height="400" id = "myimage">
+        <div id="description">Valencia, Spain, is a city that offers a unique blend of history, culture, and modernity.</div>
+        <iframe
+            id="myimageMap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197293.8141270794!2d-0.5263238810221507!3d39.40793427444244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia%2C%20Spain!5e0!3m2!1sen!2sus!4v1759456480662!5m2!1sen!2sus"
+            width="500"
+            height="300"
+            style="border:0;"
+            loading="lazy">
+        </iframe>
+    <form>
+    <input type="radio" id="CASradio" name="valencia" value="CAS">
+    <label for="CASradio">City of Arts and Science</label><br>
+
+    <input type="radio" id="Ayunradio" name="valencia" value="Ayun">
+    <label for="Ayunradio">Ayuntamiento</label><br>
+
+    <input type="radio" id="Beachradio" name="valencia" value="Beach">
+    <label for="Beachradio">Beach</label>
+
+
+
+
+    </form> 
     </body>
+    <label for="size">Choose a size:</label>
+
+    <select name="size" id="imgsize">
+    <option value="small"!>Small</option>
+    <option value="medium"!>Medium</option>
+    <option value="large"!>Large</option>
+    </select>
+    
+    <script src="script.js"></script> 
 </html>
